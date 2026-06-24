@@ -50,7 +50,7 @@ jobs:
       - name: Deploy application to EC2 via SSH
         env:
           SSH_KEY: ${{ secrets.VM_SSH_KEY }}
-          HOST: ${{ secrets.VM.USER }}
+          HOST: ${{ secrets.VM_HOST }}
           USER: ${{ secrets.VM_USER }}
         run: |
           # Write the private key to a temp file and restrict permissions.
