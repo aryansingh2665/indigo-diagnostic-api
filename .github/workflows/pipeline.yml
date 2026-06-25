@@ -72,4 +72,4 @@ jobs:
             'cd /home/$USER/indigo-app && \
             pip install -r requirements.txt -q && \
             pkill -f app.py || true && \
-            nohup python2 app.py &> app.log &'
+            nohup python3 app.py &> app.log &'
